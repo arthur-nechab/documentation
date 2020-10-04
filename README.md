@@ -1,5 +1,3 @@
-# Home
-
 ## [Pfsense](_pfsense/)
 
 * [Configuration](_pfsense/configuration.md)
