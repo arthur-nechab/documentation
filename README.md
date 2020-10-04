@@ -1,4 +1,4 @@
-## [Pfsense](_pfsense/)
+## [pfSense](_pfsense/)
 
 * [Configuration](_pfsense/configuration.md)
 * [IPsec](_pfsense/new_settlements.md)
