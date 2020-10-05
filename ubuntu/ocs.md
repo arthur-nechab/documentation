@@ -2,32 +2,32 @@
 
 1. On installe apache et ses modules ensuite 
 
-```shell
+```
 sudo apt install apache2 libapache2-mod-php libapache-dbi-perl libapache-db-perl
 ```
 
 2. Installation de PHP7.2 et ses modules
 
-```shell
+```
 sudo apt-get install php php-zip php-pclzip php-mysql php-gd php-curl php-mbstring php-soap php-xml php-json
 ```
 
 3. Installation de PERL 5.6 et ses modules
 
-```shell
+```
 sudo apt install perl libxml-simple-perl libcompress-zlib-perl libdbi-perl libdbd-mysql-perl libnet-ip-perl libsoap-lite-perl libio-compress-perl libapache-dbi-perl  libapache2-mod-perl2 libapache2-mod-perl2-dev
 ```
 
 4. Installation de Make et GCC et des modules PERL
 
-```shell
+```
 sudo apt install make
 sudo apt install gcc
 ```
 
 5. On installe maintenant les modules de PERL
 
-```shell
+```
 sudo perl -MCPAN -e 'install Apache2::SOAP'
 sudo perl -MCPAN -e 'install XML::Entities'
 sudo perl -MCPAN -e 'install Net::IP'
@@ -39,7 +39,7 @@ sudo perl -MCPAN -e 'install Plack::Handler'
 
 Archive::Zip ne s’installe pas directement, il faut passer par le shell
 
-```shell
+```
 sudo perl -MCPAN -e shell 
 install Archive::Zip
 exit
@@ -47,7 +47,7 @@ exit
 
 6. Créons un utilisateur qu’on utilisera plus tard dans la configuration Windows
 
-```shell
+```
 sudo mysql -u root -p
 ```
 
@@ -61,13 +61,13 @@ exit;
 
 7. Installation d’OCS
 
-```shell
+```
 sudo wget https://github.com/OCSInventory-NG/OCSInventory-ocsreports/releases/download/2.7/OCSNG_UNIX_SERVER_2.7.tar.gz
 ```
 
 Extraire le dossier puis on se délace dedans
 
-```shell
+```
 sudo tar xfvz OCSNG_UNIX_SERVER_2.7.tar.gz
 cd OCSNG_UNIX_SERVER_2.7
 sudo sh setup.sh
@@ -75,20 +75,20 @@ sudo sh setup.sh
 
 On active ensuite les modules suivants, puis on restart apache.
 
-```shell
+```
 sudo a2enconf ocsinventory-reports
 sudo a2enconf z-ocsinventory-server
 ```
 
 On donne les droits d’accès au dossier ocsinventory-reports pour le serveur web
 
-```shell
+```
 sudo chown -R www-data:www-data var/lib/ocsinventory-reports/
 ```
 
 On restart ensuite proprement apache
 
-```shell
+```
 sudo systemctl reload apache2
 sudo service apache2 restart
 ```
