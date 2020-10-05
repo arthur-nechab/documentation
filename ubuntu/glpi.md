@@ -2,6 +2,12 @@
 
 Commençons pour l’installation, créons dans un premier temps une database et un user dans la base de donnée mysql déjà installé.
 
+```
+sudo apt install mysql-server mysql-client
+sudo mysql_secure_installation
+```
+
+
 ```sql
 sudo mysql -u root -p
 CREATE DATABASE glpi;
