@@ -1,8 +1,10 @@
 ## [pfSense](pfsense/)
 
 * [Configuration](pfsense/configuration.md)
-* [IPsec](pfsense/new_settlements.md)
+* [IPsec](pfsense/ipsec.md)
+* [Openvpn](pfsense/openvpn.md)
 * [Nat](pfsense/nat.md)
+* [DMZ](pfsense/dmz.md)
 
 ## [Ubuntu Server](ubuntu/)
 
@@ -17,4 +19,5 @@
 ## [Windows Server](_windows/)
 
 * [AD](windows/ad.md)
+* [Liason LDAP](windows/ad.md)
 * [DNS](windows/dns.md)
