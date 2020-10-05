@@ -1,1 +1,53 @@
+#### GLPI (Gestion libre de parc informatique) est un logiciel libre de gestion des services informatiques (gestion de parc, inventaire, budget…) et de gestion des services d’assistance (déclaration d’incident, tickets, statistiques).
 
+Commençons pour l’installation, créons dans un premier temps une database et un user dans la base de donnée mysql déjà installé.
+
+```sql
+sudo mysql -u root -p
+CREATE DATABASE glpi;
+USE glpi;
+CREATE USER ‘glpi’@'localhost' IDENTIFIED BY ‘0000’;
+GRANT ALL PRIVILEGES ON glpi.* TO ‘glpi’@'localhost';
+exit;
+```
+
+Installons ensuite Apache et PHP avec les extensions suivantes :
+
+```
+sudo apt-get install apache2 php libapache2-mod-php php-json php-mysql php-curl php-mbstring php-gd php-xml php-fileinfo 
+```
+
+php-json : pour supporter les formats de données JSON
+php-xml : pour installer le XML
+php-gd : pour générer des images
+php-mbstring : pour gérer des caractères qui font plusieurs octets
+php-curl : pour le CAS (Central Authentication Service)
+php-mysql : pour se connecter à la base de données
+php-fileinfo : pour récupérer des données supplémentaires sur les fichiers
+
+Il ne reste plus qu’à installer GLPI.
+
+```
+wget https://github.com/glpi-project/glpi/releases/download/9.4.5/glpi-9.4.5.tgz
+tar xvf glpi-9.4.5.tgz
+```
+
+On bouge le dossier extrait dans le dossier du serveur apache
+
+```
+sudo mv glpi/ ../../var/www/html/
+```
+
+On donne les droits du serveur web sur le serveur apache
+
+```
+sudo chown -R www-data:www-data /var/www/html/
+```
+
+Passons maintenant au serveur web. Sur la machine Windows Server 2016 relié (avec le pare-feu Windows désactivé), entrer « 192.168.1.107/glpi » puis faire « suivant ».
+Accepter les termes de licences puis faire installer
+localhost / glpi / 0000
+Selectionner la database « glpi »
+L’installation est terminée ! Les identifiants sont « glpi » et « glpi ».
+
+Une fois connecté sur l’interface web, nous pouvons facilement accéder aux services proposés par GLPI (tickets, planning, notes, contrats, etc…).
