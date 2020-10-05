@@ -14,7 +14,9 @@ sudo apt-get install php php-zip php-pclzip php-mysql php-gd php-curl php-mbstri
 
 3. Installation de PERL 5.6 et ses modules
 
-sudo apt install perl libxml-simple-perl libcompress-zlib-perl libdbi-perl libdbd-mysql-perl libnet-ip-perl libsoap-lite-perl libio-compress-perl libapache-dbi-perl  libapache2-mod-perl2 libapache2-mod-perl2-dev 
+```shell
+sudo apt install perl libxml-simple-perl libcompress-zlib-perl libdbi-perl libdbd-mysql-perl libnet-ip-perl libsoap-lite-perl libio-compress-perl libapache-dbi-perl  libapache2-mod-perl2 libapache2-mod-perl2-dev
+```
 
 4. Installation de Make et GCC et des modules PERL
 
@@ -58,8 +60,6 @@ exit;
 ```
 
 7. Installation d’OCS
-
-Récupérons OCS Inventory 2.7 depuis le site officiel
 
 ```shell
 sudo wget https://github.com/OCSInventory-NG/OCSInventory-ocsreports/releases/download/2.7/OCSNG_UNIX_SERVER_2.7.tar.gz
