@@ -17,14 +17,6 @@ Installons ensuite Apache et PHP avec les extensions suivantes :
 sudo apt-get install apache2 php libapache2-mod-php php-json php-mysql php-curl php-mbstring php-gd php-xml php-fileinfo 
 ```
 
-php-json : pour supporter les formats de données JSON
-php-xml : pour installer le XML
-php-gd : pour générer des images
-php-mbstring : pour gérer des caractères qui font plusieurs octets
-php-curl : pour le CAS (Central Authentication Service)
-php-mysql : pour se connecter à la base de données
-php-fileinfo : pour récupérer des données supplémentaires sur les fichiers
-
 Il ne reste plus qu’à installer GLPI.
 
 ```
