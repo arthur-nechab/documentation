@@ -1,10 +1,10 @@
 #### Graylog est un outil qui permet de centralisation de logs. Un log est un évènement notifié et crédité d’une importance plus ou moins élevée par un service. Il est collecté dans un journal et consultable à tout moment. Les logs permettent de comprendre le fonctionnement d'un service et de nous prévenir de potentiels dysfonctionnements au sein de ce même service, donc d'expliquer d'où proviennent les erreurs et de nous donner ainsi une première piste de résolution. Ils permettent également de tracer le parcours d'un utilisateur, par exemple lors d'une intrusion frauduleuse. Tout système, service et même élément réseaux, produisent des logs qui sont consultables dans un journal local.
 
 Graylog est composée de 4 parties :
-•	Elasticsearch permettant le stockage de logs et la recherche textuelle.
-•	MongoDB qui assure la gestion des métadonnées.
-•	Le serveur Graylog qui va « récolter » les logs.
-•	Et l’interface web de Graylog, qui va nous permettre de consulter nos logs et de paramétrer certaines fonctionnalités de Graylog sur une interface plus facile.
+- Elasticsearch permettant le stockage de logs et la recherche textuelle.
+- MongoDB qui assure la gestion des métadonnées.
+- Le serveur Graylog qui va « récolter » les logs.
+- Et l’interface web de Graylog, qui va nous permettre de consulter nos logs et de paramétrer certaines fonctionnalités de Graylog sur une interface plus facile.
 
 
 
