@@ -1,19 +1,27 @@
 ### 1) Présentation
 
-##### OCS Inventory est un logiciel d’inventaire et de télé déploiement très utilisé. Elle permet de réaliser des inventaires matériels et logiciels de machines du parc. Ces derniers sont consultables sur une interface web et dans GLPI grâce à un plugin.
+##### OCS Inventory est un logiciel d’inventaire et de télé déploiement très utilisé. Elle permet de réaliser des inventaires matériels et logiciels de machines du parc. Ces derniers sont consultables sur une interface web et dans GLPI grâce à un plugin. OCS Inventory permet d'effectuer l'inventaire de la configuration des machines d'un réseau, qu'il s'agisse des logiciels ou bien de la configuration matérielle. Ces informations sont disponibles sur l'interface web. Depuis cette dernière nous pouvons aussi déployer à distance des applications sur plusieurs machines.
 
 ### 2) Pré-requis
 
 ##### Apache version 2.2 ou plus
+
+```
 -Mod_perl version 1.29 ou plus
+```
 
 ##### PHP 5.5 ou plus, avec ZIP et GD support activé
+
+```
 -php_curl
 -php_mbstring
 -php_soap
 -php_xml
+```
 
 ##### PERL 5.6 ou plus
+
+```
 -Perl module XML::Simple version 2.12 ou plus
 -Perl module Compress::Zlib version 1.33 ou plus
 -Perl module DBI version 1.40 ou plus
@@ -27,10 +35,11 @@
 -Perl module YAML
 -Perl module XML::Entities
 -Perl module Switch
+```
 
-#####MySQL version 5.5 maximum
+##### MySQL version 5.5 maximum
 
-#####Make et GCC
+##### Make et GCC
 
 ### 3) Installation
 
@@ -99,7 +108,7 @@ exit;
 sudo wget https://github.com/OCSInventory-NG/OCSInventory-ocsreports/releases/download/2.7/OCSNG_UNIX_SERVER_2.8.tar.gz
 ```
 
-Extraire le dossier puis on se délace dedans
+8. Extraire le dossier puis on se délace dedans
 
 ```
 sudo tar xfvz OCSNG_UNIX_SERVER_2.8.tar.gz
@@ -107,33 +116,24 @@ cd ../../opt/OCSNG_UNIX_SERVER_2.8
 sudo sh setup.sh
 ```
 
-On active ensuite les modules suivants, puis on restart apache.
+9. On active ensuite les modules suivants, puis on restart apache.
 
 ```
 sudo a2enconf ocsinventory-reports
 sudo a2enconf z-ocsinventory-server
 ```
 
-On donne les droits d’accès au dossier ocsinventory-reports pour le serveur web
+10. On donne les droits d’accès au dossier ocsinventory-reports pour le serveur web
 
 ```
 sudo chown -R www-data:www-data var/lib/ocsinventory-reports/
 ```
 
-On restart ensuite proprement apache
+11. On restart ensuite proprement apache
 
 ```
 sudo systemctl reload apache2
 sudo service apache2 restart
 ```
 
-Sur Windows maintenant, entrons le mot de passe root définis précédemment afin de permettre à OCS Inventory d’utiliser la base de données mysql.
- 
-« Valider »
-
-L’écran d’accueil d’OCS s’ouvre. Les identifiants sont « admin » et « admin ».
-
-L’installation est terminée !
-
-##### OCS Inventory permet d'effectuer l'inventaire de la configuration des machines d'un réseau, qu'il s'agisse des logiciels ou bien de la configuration matérielle. 
-##### Ces informations sont disponibles sur l'interface web. Depuis cette dernière nous pouvons aussi déployer à distance des applications sur plusieurs machines.
+12. Sur Windows maintenant, entrons le mot de passe root définis précédemment afin de permettre à OCS Inventory d’utiliser la base de données mysql. Faire « Valider ». L’écran d’accueil d’OCS s’ouvre. Les identifiants sont « admin » et « admin ». L’installation est terminée !
