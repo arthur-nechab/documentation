@@ -1,47 +1,47 @@
-### 1) Présentation
+## 1) Présentation
 
 ##### OCS Inventory est un logiciel d’inventaire et de télé déploiement très utilisé. Elle permet de réaliser des inventaires matériels et logiciels de machines du parc. Ces derniers sont consultables sur une interface web et dans GLPI grâce à un plugin. OCS Inventory permet d'effectuer l'inventaire de la configuration des machines d'un réseau, qu'il s'agisse des logiciels ou bien de la configuration matérielle. Ces informations sont disponibles sur l'interface web. Depuis cette dernière nous pouvons aussi déployer à distance des applications sur plusieurs machines.
 
-### 2) Pré-requis
+## 2) Pré-requis
 
-##### Apache version 2.2 ou plus
+##### -Apache version 2.2 ou plus
 
 ```
 -Mod_perl version 1.29 ou plus
 ```
 
-##### PHP 5.5 ou plus, avec ZIP et GD support activé
+##### -PHP 5.5 ou plus, avec ZIP et GD support activé
 
 ```
--php_curl
--php_mbstring
--php_soap
--php_xml
+php_curl
+php_mbstring
+php_soap
+php_xml
 ```
 
-##### PERL 5.6 ou plus
+##### -PERL 5.6 ou plus
 
 ```
--Perl module XML::Simple version 2.12 ou plus
--Perl module Compress::Zlib version 1.33 ou plus
--Perl module DBI version 1.40 ou plus
--Perl module DBD::Mysql version 2.9004 ou plus
--Perl module Apache::DBI version 0.93 ou plus
--Perl module Net::IP version 1.21 ou plus
--Perl module SOAP::Lite version 0.66 ou plus
--Perl module Mojolicious::Lite
--Perl module Plack::Handler
--Perl module Archive::Zip
--Perl module YAML
--Perl module XML::Entities
--Perl module Switch
+Perl module XML::Simple version 2.12 ou plus
+Perl module Compress::Zlib version 1.33 ou plus
+Perl module DBI version 1.40 ou plus
+Perl module DBD::Mysql version 2.9004 ou plus
+Perl module Apache::DBI version 0.93 ou plus
+Perl module Net::IP version 1.21 ou plus
+Perl module SOAP::Lite version 0.66 ou plus
+Perl module Mojolicious::Lite
+Perl module Plack::Handler
+Perl module Archive::Zip
+Perl module YAML
+Perl module XML::Entities
+Perl module Switch
 ```
 
-##### MySQL version 5.5 maximum
+##### -MySQL version 5.5 maximum
 
-##### Make et GCC
+##### -Make et GCC
 
-### 3) Installation
+## 3) Installation
 
 1. Installation de Apache ??? et de ses modules
 
