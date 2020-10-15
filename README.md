@@ -8,18 +8,23 @@
 
 ## [Ubuntu Server](ubuntu/)
 
-* [OCS](ubuntu/ocs.md)
-* [GLPI](ubuntu/glpi.md)
-* [Librenms](ubuntu/librenms.md)
-* [Graylog](ubuntu/graylog.md)
 * [Bareos](ubuntu/bareos.md)
 * [Fog](ubuntu/fog.md)
+* [GLPI](ubuntu/glpi.md)
+* [Graylog](ubuntu/graylog.md)
 * [LDAP](ubuntu/ldap.md)
+* [Librenms](ubuntu/librenms.md)
+* [OCS](ubuntu/ocs.md)
 * [Serveur Web](ubuntu/web.md)
 * [Zimbra](ubuntu/zimbra.md)
 
 ## [Windows Server](_windows/)
 
+* [Powershell](windows/powershell/)
+
 * [AD](windows/ad.md)
-* [Liason LDAP](windows/ad.md)
+* [DHCP](windows/dhcp.md)
 * [DNS](windows/dns.md)
+* [GPO](windows/gpo.md)
+* [Liason LDAP](windows/liaisonldap.md)
+* [Serveur Web](windows/web.md)
