@@ -15,6 +15,7 @@
 * [Bareos](ubuntu/bareos.md)
 * [Fog](ubuntu/fog.md)
 * [LDAP](ubuntu/ldap.md)
+* [Zimbra](ubuntu/zimbra.md)
 
 ## [Windows Server](_windows/)
 
