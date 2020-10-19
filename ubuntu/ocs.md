@@ -52,7 +52,9 @@ sudo apt install apache2 libapache2-mod-php libapache-dbi-perl libapache-db-perl
 2. Installation de PHP ??? et de ses modules
 
 ```
-sudo apt-get install php php-zip php-pclzip php-mysql php-gd php-curl php-mbstring php-soap php-xml php-json
+sudo apt-get install php php-
+
+php-pclzip php-mysql php-gd php-curl php-mbstring php-soap php-xml php-json
 ```
 
 3. Installation de PERL ???? et de ses modules
