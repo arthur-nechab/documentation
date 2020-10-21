@@ -98,7 +98,7 @@ sudo mysql -u root -p
 ```sql
 CREATE DATABASE ocs;
 USE ocs;
-CREATE USER ‘ocs’@'localhost' IDENTIFIED BY ‘password’;
+CREATE USER 'ocs'@'localhost' IDENTIFIED BY '0000';
 GRANT ALL PRIVILEGES ON ocs.* TO 'ocs'@'localhost';
 exit;
 ```
