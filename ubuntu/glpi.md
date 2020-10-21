@@ -52,8 +52,8 @@ sudo apt-get install apache2 php libapache2-mod-php php-json php-mysql php-curl 
 Il ne reste plus qu’à installer GLPI.
 
 ```
-wget https://github.com/glpi-project/glpi/releases/download/9.4.5/glpi-9.4.5.tgz
-tar xvf glpi-9.4.5.tgz
+wget https://github.com/glpi-project/glpi/releases/download/9.5.2/glpi-9.5.2.tgz
+tar xvf glpi-9.5.2.tgz
 ```
 
 On bouge le dossier extrait dans le dossier du serveur apache
