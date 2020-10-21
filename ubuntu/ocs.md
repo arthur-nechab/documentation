@@ -88,7 +88,7 @@ install Archive::Zip
 exit
 ```
 
-6. Créons un utilisateur qu’on utilisera plus tard dans la configuration Windows
+6. Installons mysql 5.7
 
 ```
 sudo apt install mysql-server
