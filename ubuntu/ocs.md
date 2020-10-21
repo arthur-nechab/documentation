@@ -43,18 +43,16 @@ Perl module Switch
 
 ## 3) Installation
 
-1. Installation de Apache ??? et de ses modules
+1. Installation de Apache 2.4 et de ses modules
 
 ```
 sudo apt install apache2 libapache2-mod-php libapache-dbi-perl libapache-db-perl
 ```
 
-2. Installation de PHP ??? et de ses modules
+2. Installation de PHP 7.2 et de ses modules
 
 ```
-sudo apt-get install php php-
-
-php-pclzip php-mysql php-gd php-curl php-mbstring php-soap php-xml php-json
+sudo apt-get install php php-zip php-pclzip php-mysql php-gd php-curl php-mbstring php-soap php-xml php-json
 ```
 
 3. Installation de PERL ???? et de ses modules
@@ -93,6 +91,7 @@ exit
 6. Créons un utilisateur qu’on utilisera plus tard dans la configuration Windows
 
 ```
+sudo apt install mysql-server
 sudo mysql -u root -p
 ```
 
