@@ -38,8 +38,8 @@ sudo mysql_secure_installation
 sudo mysql -u root -p
 CREATE DATABASE glpi;
 USE glpi;
-CREATE USER ‘glpi’@'localhost' IDENTIFIED BY ‘0000’;
-GRANT ALL PRIVILEGES ON glpi.* TO ‘glpi’@'localhost';
+CREATE USER 'glpi'@'localhost' IDENTIFIED BY '0000';
+GRANT ALL PRIVILEGES ON glpi.* TO 'glpi'@'localhost';
 exit;
 ```
 
