@@ -1,10 +1,10 @@
 ## 1) Présentation
 
-#### Nous cherchons à installer LibreNMS sur Ubuntu Server 18.04 LTS. Nous utiliserons l’interface web depuis une machine Windows Server 2016 pour finaliser l’installation. LibreNMS outil communautaire qui permet de faire de la surveillance informatique sur un large éventail de systèmes.
+#### LibreNMS outil communautaire qui permet de faire de la surveillance informatique sur un large éventail de systèmes.
 
 ## 2) Pré-requis
-##### -Ubuntu
-##### -Windows
+##### -?
+##### -?
 
 ## 3) Installation
 
@@ -94,7 +94,7 @@ date.timezone = Europe/Paris
 ```
 sudo systemctl restart php7.3-fpm
 sudo service php7.3-fpm start
-sudo ln -s /var/run/php/php7.3-fpm.sock /var/run/php/php7.3-fpm.sock
+sudo ln -s /var/run/php/php7.3-fpm.sock /var/run/php/php7.0-fpm.sock
 sudo nano /etc/nginx/conf.d/librenms.conf
 ```
 
