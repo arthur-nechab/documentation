@@ -21,7 +21,9 @@ Télécharger ensuite :
 wget -q http://download.bareos.org/bareos/release/latest/xUbuntu_16.04/Release.key -O- | sudo apt-key add -
 ```
 
+```
 sudo apt install mariadb-server bareos bareos-database-mysql
+```
 
 Sélectionner « Site internet » puis « Installer la db ».
 
