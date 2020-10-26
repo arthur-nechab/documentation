@@ -82,19 +82,19 @@ sudo systemctl restart mysql
 ```
 sudo timedatectl set-timezone Europe/Paris
 
-sudo nano /etc/php/7.2/fpm/php.ini
+sudo nano /etc/php/7.3/fpm/php.ini
 date.timezone = Europe/Paris
 
-sudo nano /etc/php/7.2/cli/php.ini
+sudo nano /etc/php/7.3/cli/php.ini
 date.timezone = Europe/Paris
 ```
  
 8. Configuration de Nginx
 
 ```
-sudo systemctl restart php7.2-fpm
-sudo service php7.2-fpm start
-sudo ln -s /var/run/php/php7.2-fpm.sock /var/run/php/php7.0-fpm.sock
+sudo systemctl restart php7.3-fpm
+sudo service php7.3-fpm start
+sudo ln -s /var/run/php/php7.3-fpm.sock /var/run/php/php7.3-fpm.sock
 sudo nano /etc/nginx/conf.d/librenms.conf
 ```
 
@@ -166,7 +166,7 @@ sudo nginx -t
 ```
 
 12. Configuration sur le serveur web
-Sur la machine Windows Server 2016 relié (ne pas oublier d’enlever le pare-feu windows), entrer sur le navigateur l’ip du serveur où est installé librenms. Faire « suivant ».
+Sur la machine Windows (ne pas oublier d’enlever le pare-feu windows), entrer sur le navigateur l’ip du serveur où est installé librenms. Faire « suivant ».
 -	Entrer le mot de passe de la db et faire « Suivant ».
 -	Entrer ensuite les identifiants admin pour la connection.
 Une fois l’installation terminée, il ne vous reste plus qu’à vous connecter !
