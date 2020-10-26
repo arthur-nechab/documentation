@@ -15,7 +15,7 @@ sudo apt install software-properties-common
 sudo add-apt-repository universe
 sudo apt update
 sudo apt upgrade
-sudo apt install curl composer fping git graphviz imagemagick mariadb-client mariadb-server mtr-tiny nginx-full nmap php7.2-cli php7.2-curl php7.2-fpm php7.2-gd php7.2-json php7.2-mbstring php7.2-mysql php7.2-snmp php7.2-xml php7.2-zip python-memcache python-mysqldb rrdtool snmp snmpd whois unzip
+sudo apt install curl composer fping git graphviz imagemagick mariadb-client mariadb-server mtr-tiny nginx-full nmap php7.3-cli php7.3-curl php7.3-fpm php7.3-gd php7.3-json php7.3-mbstring php7.3-mysql php7.3-snmp php7.3-xml php7.3-zip python-memcache python-mysqldb rrdtool snmp snmpd whois unzip
 ```
 
 2. Ajout d’un utilisateur librenms
@@ -136,8 +136,9 @@ sudo cp /opt/librenms/snmpd.conf.example /etc/snmp/snmpd.conf
 sudo nano /etc/snmp/snmpd.conf
 ```
 
-9. Configuration de SNMP
 Remplacer RANDOMSTRINGGOESHERE par autre chose (ici « public »).
+
+9. Configuration de SNMP
 
 ```
 sudo curl -o /usr/bin/distro https://raw.githubusercontent.com/librenms/librenms-agent/master/snmp/distro
