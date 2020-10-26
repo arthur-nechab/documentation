@@ -108,7 +108,7 @@ sudo systemctl restart graylog-server
 sudo systemctl enable graylog-server
 ```
 
-## 3) Mode Opératoire
+## 4) Mode Opératoire
 
 Passons maintenant au serveur web.
 
