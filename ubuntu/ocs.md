@@ -43,6 +43,12 @@ Perl module Switch
 
 ## 3) Installation
 
+0. Tout d'un coup
+
+```
+sudo apt install apache2 libapache2-mod-php libapache-dbi-perl libapache-db-perl php php-zip php-pclzip php-mysql php-gd php-curl php-mbstring php-soap php-xml perl libxml-simple-perl libcompress-zlib-perl libdbi-perl libdbd-mysql-perl libnet-ip-perl libsoap-lite-perl libio-compress-perl libapache-dbi-perl  libapache2-mod-perl2 libapache2-mod-perl2-dev make gcc
+```
+
 1. Installation de Apache 2.4 et de ses modules
 
 ```
@@ -55,7 +61,7 @@ sudo apt install apache2 libapache2-mod-php libapache-dbi-perl libapache-db-perl
 sudo apt-get install php php-zip php-pclzip php-mysql php-gd php-curl php-mbstring php-soap php-xml
 ```
 
-3. Installation de PERL ???? et de ses modules
+3. Installation de PERL et de ses modules
 
 ```
 sudo apt install perl libxml-simple-perl libcompress-zlib-perl libdbi-perl libdbd-mysql-perl libnet-ip-perl libsoap-lite-perl libio-compress-perl libapache-dbi-perl  libapache2-mod-perl2 libapache2-mod-perl2-dev
@@ -128,6 +134,7 @@ sudo a2enconf z-ocsinventory-server
 10. On donne les droits d’accès au dossier ocsinventory-reports pour le serveur web
 
 ```
+cd ../..
 sudo chown -R www-data:www-data var/lib/ocsinventory-reports/
 ```
 
@@ -138,11 +145,9 @@ sudo systemctl reload apache2
 sudo service apache2 restart
 ```
 
-12. Sur Windows maintenant, entrons le mot de passe root définis précédemment afin de permettre à OCS Inventory d’utiliser la base de données mysql. Faire « Valider ». L’écran d’accueil d’OCS s’ouvre. Les identifiants sont « admin » et « admin ». L’installation est terminée !
+12. Ne pas oublier de supprimer le fichier `install.php` dans ../ocsreports/
 
-13. Ne pas oublier de supprimer le fichier `install.php` dans ../ocsreports/
-
-14. Enfin dans `php/7.2/apaché/php.ini`
+13. Enfin dans `php/7.2/apaché/php.ini`
 
 ```
 max_execution_time = 180
@@ -152,4 +157,6 @@ upload_max_filesize = 300M
 post_max_size = 300M
 ```
 
-15. Reboot !
+14. Reboot !
+
+15. Sur Windows maintenant, entrons le mot de passe root définis précédemment afin de permettre à OCS Inventory d’utiliser la base de données mysql. Faire « Valider ». L’écran d’accueil d’OCS s’ouvre. Les identifiants sont « admin » et « admin ». L’installation est terminée !
