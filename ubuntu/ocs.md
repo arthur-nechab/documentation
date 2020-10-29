@@ -139,3 +139,17 @@ sudo service apache2 restart
 ```
 
 12. Sur Windows maintenant, entrons le mot de passe root définis précédemment afin de permettre à OCS Inventory d’utiliser la base de données mysql. Faire « Valider ». L’écran d’accueil d’OCS s’ouvre. Les identifiants sont « admin » et « admin ». L’installation est terminée !
+
+13. Ne pas oublier de supprimer le fichier `install.php` dans ../ocsreports/
+
+14. Enfin dans `php/7.2/apaché/php.ini`
+
+```
+max_execution_time = 180
+max_input_time = 1800
+memory_limit = 256M
+upload_max_filesize = 300M
+post_max_size = 300M
+```
+
+15. Reboot !
