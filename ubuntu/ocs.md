@@ -37,7 +37,7 @@ Perl module XML::Entities
 Perl module Switch
 ```
 
-##### -MySQL version 5.5 maximum
+##### -MariaDB 4.1 ou plus
 
 ##### -Make et GCC
 
@@ -91,7 +91,8 @@ exit
 6. Installons mysql 5.7
 
 ```
-sudo apt install mysql-server
+sudo apt install mariadb-server
+sudo mysql_secure_installation
 sudo mysql -u root -p
 ```
 
@@ -138,5 +139,3 @@ sudo service apache2 restart
 ```
 
 12. Sur Windows maintenant, entrons le mot de passe root définis précédemment afin de permettre à OCS Inventory d’utiliser la base de données mysql. Faire « Valider ». L’écran d’accueil d’OCS s’ouvre. Les identifiants sont « admin » et « admin ». L’installation est terminée !
-
-https://iia-laval.info/wiki/_media/user/c.marguerite/doc_install_ocs_gpo.pdf
