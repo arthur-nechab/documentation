@@ -6,16 +6,18 @@
 
 ## 2) Pré-requis
 
-##### -MySQL version 4.1 - 5.6
+##### -PostgreSQL 8.4
+##### -MariaDB
+##### -SQLite3
 
 ## 3) Installation
 
-Commençons par l’installation.
+1. Commençons par l’installation.
 ```
 sudo sh -c 'echo "deb http://download.bareos.org/bareos/release/latest//xUbuntu_18.04 /" >> /etc/apt/sources.list.d/bareos.list'
 ```
 
-Télécharger ensuite :
+2. Télécharger ensuite :
 
 ```
 wget -q http://download.bareos.org/bareos/release/latest/xUbuntu_16.04/Release.key -O- | sudo apt-key add -
@@ -25,9 +27,9 @@ wget -q http://download.bareos.org/bareos/release/latest/xUbuntu_16.04/Release.k
 sudo apt install mariadb-server bareos bareos-database-mysql
 ```
 
-Sélectionner « Site internet » puis « Installer la db ».
+3. Sélectionner « Site internet » puis « Installer la db ».
 
-Après l'installation, relancer les services du Bareos en exécutant les commandes ci-dessous :
+4. Après l'installation, relancer les services du Bareos en exécutant les commandes ci-dessous :
 
 ```
 sudo service bareos-dir start
@@ -35,27 +37,25 @@ sudo service bareos-sd start
 sudo service bareos-fd start
 ```
 
-Installons ensuite l'interface utilisateur Web :
+5. Installons ensuite l'interface utilisateur Web :
 
 ```
 sudo apt-get install bareos-webui
 ```
 
-Les dépendances installées comprennent le serveur web Apache, PHP et un certain nombre d'extensions.
-
-Redémarrons le serveur web Apache pour activer la nouvelle configuration.
+6. Les dépendances installées comprennent le serveur web Apache, PHP et un certain nombre d'extensions. Redémarrons le serveur web Apache pour activer la nouvelle configuration.
 
 ```
 sudo systemctl restart apache2
 ```
 
-Exécuter les commandes ci-dessous pour lancer d'autres services Bareos.
+7. Exécuter les commandes ci-dessous pour lancer d'autres services Bareos.
 
 ```
 sudo systemctl start bareos-dir bareos-sd bareos-fd
 ```
 
-Créons un utilisateur pour nous connecter au service Web. Pour entrer dans la console bareos faire :
+8. Créons un utilisateur pour nous connecter au service Web. Pour entrer dans la console bareos faire :
 
 ```
 sudo bconsole
@@ -64,15 +64,14 @@ sudo bconsole
 exit
 ```
 
-Enfin, redémarrons les différents service pour mettre à jour les modifications.
+9. Enfin, redémarrons les différents service pour mettre à jour les modifications.
 
 ```
 sudo systemctl restart apache2 bareos-dir bareos-sd bareos-fd
 ```
 
-Passons maintenant au serveur web. Sur la machine Windows Server 2016 relié (avec le pare-feu Windows désactivé), entrer « 192.168.1.108/bareos-webui »
+10. Passons maintenant au serveur web à l'adresse `adressip/bareos-webui`. 
 
- 
 Une fois connecté, sauvegardons le serveur Bareos.
 
 Dans le premier menu cliquez sur « Jobs » puis sur « Lancer ». 
