@@ -20,10 +20,7 @@ php_zlib
 php_simplexml
 php_xml
 php_intl
-```
-
-```
-php_ldap
+php_ldap (facultatif)
 ```
 
 ##### -MariaDB 10.0 ou plus
