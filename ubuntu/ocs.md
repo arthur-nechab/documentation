@@ -160,3 +160,5 @@ post_max_size = 300M
 14. Reboot !
 
 15. Sur Windows maintenant, entrons le mot de passe root définis précédemment afin de permettre à OCS Inventory d’utiliser la base de données mysql. Faire « Valider ». L’écran d’accueil d’OCS s’ouvre. Les identifiants sont « admin » et « admin ». L’installation est terminée !
+
+## 4) Mode Opératoire
