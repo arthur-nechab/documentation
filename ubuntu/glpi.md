@@ -50,7 +50,7 @@ exit;
 Installons ensuite Apache et PHP avec les extensions suivantes :
 
 ```
-sudo apt-get install apache2 php libapache2-mod-php php7.3-json php7.3-mysqli php7.3-curl php7.3-mbstring php7.3-gd php7.3-xml php7.3-fileinfo php7.3-zlib php7.3-simplexml php7.3-xml php7.3-intl php7.3-ldap
+sudo apt-get install apache2 php7.3 libapache2-mod-php php7.3-json php7.3-mysqli php7.3-curl php7.3-mbstring php7.3-gd php7.3-xml php7.3-fileinfo php7.3-zlib php7.3-simplexml php7.3-xml php7.3-intl php7.3-ldap
 ```
 
 Il ne reste plus qu’à installer GLPI.
