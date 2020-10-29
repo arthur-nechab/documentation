@@ -71,9 +71,12 @@ sudo chown -R www-data:www-data /var/www/html/
 ```
 
 7. Passons maintenant au serveur web avec l'adresse `adresseip/glpi`
-- Accepter les termes de licences puis faire installer
+- Sélectionner le language
+- Accepter les termes de licences
+- Installer
 - localhost / glpi / 0000
 - Selectionner la database « glpi »
+- Continuer
 - L’installation est terminée ! Les identifiants sont « glpi » et « glpi ».
 
 8. L'installation est terminée !
