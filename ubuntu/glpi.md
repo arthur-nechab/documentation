@@ -78,6 +78,6 @@ sudo chown -R www-data:www-data /var/www/html/
 
 8. L'installation est terminée !
 
-## 4) Mode-Opératoire
+## 4) Mode Opératoire
 
 Une fois connecté sur l’interface web, nous pouvons facilement accéder aux services proposés par GLPI (tickets, planning, notes, contrats, etc…).
