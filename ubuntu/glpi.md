@@ -30,14 +30,13 @@ php_ldap
 
 ## 3) Installation
 
-Commençons pour l’installation, créons dans un premier temps une database et un user dans la base de donnée mysql déjà installé.
+1. Commençons pour l’installation, créons dans un premier temps une database et un user dans la base de donnée mysql déjà installé.
 
 ```
 sudo apt install mysql-server mysql-client
 sudo mysql_secure_installation
 sudo mysql -u root -p
 ```
-
 
 ```sql
 CREATE DATABASE glpi;
@@ -47,35 +46,41 @@ GRANT ALL PRIVILEGES ON glpi.* TO 'glpi'@'localhost';
 exit;
 ```
 
-Installons ensuite Apache et PHP avec les extensions suivantes :
+2. Installons ensuite Apache et PHP avec les extensions suivantes :
 
 ```
 sudo apt-get install apache2 php libapache2-mod-php php-json php-mysqli php-curl php-mbstring php-gd php-xml php-fileinfo php-zlib php-simplexml php-xml php-intl php-ldap
 ```
 
-Il ne reste plus qu’à installer GLPI.
+3. Dans `php/7.2/apaché/php.ini` décommenter les extensions
+
+4. Installer GLPI
 
 ```
 wget https://github.com/glpi-project/glpi/releases/download/9.5.2/glpi-9.5.2.tgz
 tar xvf glpi-9.5.2.tgz
 ```
 
-On bouge le dossier extrait dans le dossier du serveur apache
+5. On bouge le dossier extrait dans le dossier du serveur apache
 
 ```
 sudo mv glpi/ ../../var/www/html/
 ```
 
-On donne les droits du serveur web sur le serveur apache
+6. On donne les droits du serveur web sur le serveur apache
 
 ```
 sudo chown -R www-data:www-data /var/www/html/
 ```
 
-Passons maintenant au serveur web. Sur la machine Windows Server 2016 relié (avec le pare-feu Windows désactivé), entrer « 192.168.1.107/glpi » puis faire « suivant ».
-Accepter les termes de licences puis faire installer
-localhost / glpi / 0000
-Selectionner la database « glpi »
-L’installation est terminée ! Les identifiants sont « glpi » et « glpi ».
+7. Passons maintenant au serveur web avec l'adresse `adresseip/glpi`
+- Accepter les termes de licences puis faire installer
+- localhost / glpi / 0000
+- Selectionner la database « glpi »
+- L’installation est terminée ! Les identifiants sont « glpi » et « glpi ».
+
+8. L'installation est terminée !
+
+## 4) Mode-Opératoire
 
 Une fois connecté sur l’interface web, nous pouvons facilement accéder aux services proposés par GLPI (tickets, planning, notes, contrats, etc…).
