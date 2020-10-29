@@ -22,7 +22,11 @@ php_xml
 php_intl
 ```
 
-##### -MySQL version 5.6 ou plus
+```
+php_ldap
+```
+
+##### -MariaDB 10.0 ou plus
 
 ## 3) Installation
 
@@ -31,11 +35,11 @@ Commençons pour l’installation, créons dans un premier temps une database et
 ```
 sudo apt install mysql-server mysql-client
 sudo mysql_secure_installation
+sudo mysql -u root -p
 ```
 
 
 ```sql
-sudo mysql -u root -p
 CREATE DATABASE glpi;
 USE glpi;
 CREATE USER 'glpi'@'localhost' IDENTIFIED BY '0000';
@@ -46,7 +50,7 @@ exit;
 Installons ensuite Apache et PHP avec les extensions suivantes :
 
 ```
-sudo apt-get install apache2 php libapache2-mod-php php-json php-mysql php-curl php-mbstring php-gd php-xml php-fileinfo 
+sudo apt-get install apache2 php libapache2-mod-php php7.3-json php7.3-mysqli php7.3-curl php7.3-mbstring php7.3-gd php7.3-xml php7.3-fileinfo php7.3-zlib php7.3-simplexml php7.3-xml php7.3-intl php7.3-ldap
 ```
 
 Il ne reste plus qu’à installer GLPI.
