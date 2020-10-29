@@ -49,10 +49,10 @@ Perl module Switch
 sudo apt install apache2 libapache2-mod-php libapache-dbi-perl libapache-db-perl
 ```
 
-2. Installation de PHP 7.2 et de ses modules
+2. Installation de PHP 7.3 et de ses modules
 
 ```
-sudo apt-get install php php-zip php-pclzip php-mysql php-gd php-curl php-mbstring php-soap php-xml php-json
+sudo apt-get install php7.3 php7.3-zip php7.3-pclzip php7.3-mysql php7.3-gd php7.3-curl php7.3-mbstring php7.3-soap php7.3-xml
 ```
 
 3. Installation de PERL ???? et de ses modules
@@ -88,7 +88,7 @@ install Archive::Zip
 exit
 ```
 
-6. Installons mysql 5.7
+6. Installons MariaDB
 
 ```
 sudo apt install mariadb-server
