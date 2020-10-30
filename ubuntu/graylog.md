@@ -22,7 +22,8 @@
 sudo apt install -y apt-transport-https openjdk-8-jre-headless uuid-runtime pwgen curl dirmngr
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-6.x.list
-sudo apt install -y elasticsearch
+sudo apt update
+sudo apt install elasticsearch
 ```
 
 2. Faisons-en sorte que le service Elasticsearch démarre automatiquement au démarrage du système.
@@ -49,7 +50,8 @@ sudo systemctl restart elasticsearch
 ```
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
 echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
-sudo apt install -y mongodb-org
+sudo apt update
+sudo apt install mongodb-org
 ```
 
 6. Faisons-en sorte que le service MongoDB démarre automatiquement au démarrage du système.
