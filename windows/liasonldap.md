@@ -26,7 +26,7 @@ rdns = no
 dns_lookup_kdc = true
 dns_lookup_realm = true
 [realms]
-BTS.LAN = {
+M2L.FR = {
 kdc = s1-intra.m2l.fr
 admin_server = s1-intra.m2l.fr
 }
