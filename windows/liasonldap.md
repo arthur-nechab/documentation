@@ -21,14 +21,14 @@ Le nouveau fichier doit contenir ce contenu-ci :
 
 ```
 [libdefaults]
-default_realm = BTS.LAN
+default_realm = M2L.FR
 rdns = no
 dns_lookup_kdc = true
 dns_lookup_realm = true
 [realms]
 BTS.LAN = {
-kdc = btsserver.bts.lan
-admin_server = btsserver.bts.lan
+kdc = s1-intra.m2l.fr
+admin_server = s1-intra.m2l.fr
 }
 ```
 
@@ -38,9 +38,9 @@ Etape 3 : Initialise Kerberos et génère un fichier de clés
 ```
 kinit administrator
 klist
-msktutil -N -c -b 'CN=COMPUTERS' -s UBUNTU /ubuntu.bts.lan -k my-keytab.keytab --computername UBUNTU-DESKTOP --upn UBUNTU $ --server btsserver.bts.lan --user-creds-only
-msktutil -N -c -b 'CN=COMPUTERS' -s UBUNTU /ubuntu -k my-keytab.keytab --computer-name
-UBUNTU --upn UBUNTU $ --server btsserver.bts.lan --user-creds-only
+msktutil -N -c -b 'CN=COMPUTERS' -s S5-MAIL /s5-mail.bts.lan -k my-keytab.keytab --computername UBUNTU-DESKTOP --upn UBUNTU $ --server s1-intra.m2l.fr --user-creds-only
+msktutil -N -c -b 'CN=COMPUTERS' -s S5-MAIL /s5-mail -k my-keytab.keytab --computer-name
+S5-MAIL --upn S5-MAIL $ --server s1-intra.m2l.fr --user-creds-only
 >kdestroy
 ```
 
@@ -58,13 +58,13 @@ La configuration SSSD doit contenir ceci :
 [sssd]
 services = nss, pam
 config_file_version = 2
-domains = bts.lan
+domains = m2l.fr
 [nss]
 entry_negative_timeout = 0
 #debug_level = 5
 [pam]
 #debug_level = 5
-[domain/bts.lan]
+[domain/m2l.fr]
 #debug_level = 10
 enumerate = false
 id_provider = ad
@@ -72,15 +72,15 @@ auth_provider = ad
 chpass_provider = ad
 access_provider = ad
 dyndns_update = false
-ad_hostname = ubuntu.bts.lan
-ad_server = btsserver.bts.lan
-ad_domain = bts.lan
+ad_hostname = s5-mail.m2l.fr
+ad_server = s1-intra.m2l.fr
+ad_domain = m2l.fr
 ldap_schema = ad
 ldap_id_mapping = true
 fallback_homedir = /home/%u
 default_shell = /bin/bash
 ldap_sasl_mech = gssapi
-ldap_sasl_authid = UBUNTU$
+ldap_sasl_authid = S5-MAIL$
 krb5_keytab = /etc/sssd/my-keytab.keytab
 ldap_krb5_init_creds = true
 Après avoir sauvegarder, mettre les permissions sur ce fichier :
