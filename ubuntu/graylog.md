@@ -16,7 +16,7 @@
 
 ## 3) Installation
 
-1. I / Installation d’Elasticsearch :
+### I / Installation d’Elasticsearch :
 
 ```
 sudo apt install -y apt-transport-https openjdk-8-jre-headless uuid-runtime pwgen curl dirmngr
@@ -26,26 +26,26 @@ sudo apt update
 sudo apt install elasticsearch
 ```
 
-2. Faisons-en sorte que le service Elasticsearch démarre automatiquement au démarrage du système.
+1. Faisons-en sorte que le service Elasticsearch démarre automatiquement au démarrage du système.
 
 ```
 sudo systemctl enable elasticsearch
 sudo nano /etc/elasticsearch/elasticsearch.yml
 ```
 
-3. Modifier le cluster en : 
+2. Modifier le cluster en : 
 
 ```
 cluster.name: graylog
 ```
 
-4. Relançons le service Elasticsearch pour mettre à jour les nouvelles configurations.
+3. Relançons le service Elasticsearch pour mettre à jour les nouvelles configurations.
 
 ```
 sudo systemctl restart elasticsearch
 ```
 
-5. II / Installation de MongoDB :
+### II / Installation de MongoDB :
 
 ```
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
@@ -54,53 +54,54 @@ sudo apt update
 sudo apt install mongodb-org
 ```
 
-6. Faisons-en sorte que le service MongoDB démarre automatiquement au démarrage du système.
+4. Faisons-en sorte que le service MongoDB démarre automatiquement au démarrage du système.
 
 ```
 sudo systemctl start mongod
 sudo systemctl enable mongod
 ```
 
-7. III / Installation de Graylog :
+### III / Installation de Graylog :
 
 ```
 wget https://packages.graylog2.org/repo/packages/graylog-3.0-repository_latest.deb
 sudo dpkg -i graylog-3.0-repository_latest.deb
+sudo apt update
 sudo apt install -y graylog-server
 ```
 
-8. Pour bien configurer Graylog, il nous faut un mot de passe. Utiliser la commande pwgen et sauvegarder l’outpout sur un fichier txt externe.
+5. Pour bien configurer Graylog, il nous faut un mot de passe. Utiliser la commande pwgen et sauvegarder l’outpout sur un fichier txt externe.
 
 ```
 pwgen -N 1 -s 96
 ```
  
 
-9. Modifier maintenant le server.conf
+6. Modifier maintenant le server.conf
 
 ```
 sudo nano /etc/graylog/server/server.conf
 ```
 
-10. Placer le mot de passe crypté dans « password_secret ». Il nous faut un mot de passe pour se connecter à l’interface web. Il ne peut pas être modifié directement dessus, il faut dont l’éditer dans le fichier de configuration.
+7. Placer le mot de passe crypté dans « password_secret ». Il nous faut un mot de passe pour se connecter à l’interface web. Il ne peut pas être modifié directement dessus, il faut dont l’éditer dans le fichier de configuration.
 
 ```
 echo -n 0000 | sha256sum
 ```
 
-11. Modifier maintenant le server.conf encore.
+8. Modifier maintenant le server.conf encore.
 
 ```
 sudo nano /etc/graylog/server/server.conf
 ```
 
-12. Placer le mot de passe crypté dans « root_password_sha2 »
+9. Placer le mot de passe crypté dans « root_password_sha2 »
 
 ```
 http_bind_address = 192.168.1.3:9000
 ```
 
-13. Relançons le service Graylog pour mettre à jour les nouvelles configurations et faisons-en sorte que le service Elasticsearch démarre automatiquement au démarrage du système.
+10. Relançons le service Graylog pour mettre à jour les nouvelles configurations et faisons-en sorte que le service Elasticsearch démarre automatiquement au démarrage du système.
 
 ```
 sudo systemctl restart graylog-server
