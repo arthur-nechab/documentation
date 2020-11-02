@@ -8,9 +8,9 @@
 ## 3) Installation
 
 ```
-sudo wget https://github.com/FOGProject/fogproject/archive/1.5.8.tar.gz
+sudo wget https://github.com/FOGProject/fogproject/archive/master.tar.gz
 
-sudo tar -xzvf fogproject-1.5.8.tar.gz
+sudo tar -xzvf master.tar.gz
 cd fogproject-1.5.8/bin
 
 sudo ./installfog.sh
