@@ -17,8 +17,10 @@ sudo ./installfog.sh
 ```
 
 L’installation commence
-Choice : 2 -> Type of installation : N -> (Si adresse IP est bonne) 
-Change network : N  -> FOG DHCP : Y   -> Additionnal packages : N
+2 -> Type of installation : 
+N -> (Si adresse IP est bonne) 
+N -> Change Network
+FOG DHCP : Y   -> Additionnal packages : N
 
 A l’étape suivante, FOG donne une adresse web avec des identifiants, il faut se connecter depuis un ordinateur situé dans le même réseau que notre serveur Ubuntu. 
 Sur la page web et cliquer sur « Install/Upgrade Now », une fois cette étape faite on tape entrée sur le serveur Ubuntu et FOG apparait.
