@@ -27,7 +27,7 @@ php_ldap (facultatif)
 
 ## III/ Installation
 
-1. Commençons pour l’installation, créons dans un premier temps une database et un user dans la base de donnée mysql déjà installé.
+1. Créons une database et un user dans la base de donnée mysql déjà installé.
 
 ```
 sudo apt install mysql-server mysql-client
