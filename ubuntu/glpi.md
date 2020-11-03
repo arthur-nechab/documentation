@@ -1,8 +1,8 @@
-## 1) Présentation
+# I/ Présentation
 
 #### GLPI (Gestion libre de parc informatique) est un logiciel libre de gestion des services informatiques (gestion de parc, inventaire, budget…) et de gestion des services d’assistance (déclaration d’incident, tickets, statistiques).
 
-## 2) Pré-requis
+# II/ Pré-requis
 
 ##### -Apache version 2.0 ou plus
 
@@ -25,7 +25,7 @@ php_ldap (facultatif)
 
 ##### -MariaDB 10.0 ou plus
 
-## 3) Installation
+# III/ Installation
 
 1. Commençons pour l’installation, créons dans un premier temps une database et un user dans la base de donnée mysql déjà installé.
 
@@ -81,6 +81,6 @@ sudo chown -R www-data:www-data /var/www/html/
 
 8. L'installation est terminée !
 
-## 4) Mode Opératoire
+# IV/ Mode Opératoire
 
 Une fois connecté sur l’interface web, nous pouvons facilement accéder aux services proposés par GLPI (tickets, planning, notes, contrats, etc…).
