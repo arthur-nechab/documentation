@@ -1,4 +1,4 @@
-## ![#f03c15]pfSense
+## pfSense
 
 * [Configuration](pfsense/configuration.md)
 * [DHCP](pfsense/dhcp.md)
