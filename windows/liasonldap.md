@@ -14,7 +14,7 @@ Etape 2 : Déplace la configuration default de Kerberos et créer un nouveau fic
 
 ```
 sudo mv /etc/krb5.conf /etc/krb5.conf.default
-sudo nano /etc/krb5.conf.
+sudo nano /etc/krb5.conf
 ```
 
 Le nouveau fichier doit contenir ce contenu-ci :
