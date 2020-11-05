@@ -1,5 +1,7 @@
 ## 1) Présentation
 
+https://gitlab.com/xavki/presentation-bareos-fr/-/tree/master/2-definitions
+
 #### Bareos est un programme de sauvegarde basé sur le modèle client-serveur, qui permet de réaliser des sauvegardes sur un système d’information par le réseau. En cas de perte de données, de mauvaise manipulation ou d’un ransomware nous aurons la possibilité de récupérer nos données. 
 
 #### L'incrémentielle se base sur la sauvegarde précédente, la différentielle se base sur sa sauvegarde complète. L'incrémentielle nécessite moins d'espace de stockage, mais demande un temps de restauration plus long. La différentielle nécessite plus d'espace de stockage, mais demande un temps de restauration plus court.
