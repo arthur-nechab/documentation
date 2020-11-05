@@ -1,4 +1,7 @@
 On souhaite une synchronisation d’utilisateurs entre notre AD et notre serveur Ubuntu.
+
+https://www.datasunrise.com/blog/professional-info/integrating-a-linux-machine-into-windows-active-directory-domain/
+
 Pour cela on va utiliser Kerberos.
 
 
