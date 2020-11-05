@@ -29,7 +29,7 @@ wget -q http://download.bareos.org/bareos/release/latest/xUbuntu_16.04/Release.k
 sudo apt install mariadb-server bareos bareos-database-mysql
 ```
 
-3. Sélectionner « Site internet » puis « Installer la db ».
+3. Sélectionner « Site internet » puis « Installer la db » (PAS DE NUMBER EN MOT DE PASSE)
 
 4. Après l'installation, relancer les services du Bareos en exécutant les commandes ci-dessous :
 
@@ -62,7 +62,7 @@ sudo systemctl start bareos-dir bareos-sd bareos-fd
 ```
 sudo bconsole
 *relaod
-*configure add console name=admin password=0000 profile=webui-admin tlsenable=false
+*configure add console name=admin password=password profile=webui-admin tlsenable=false
 exit
 ```
 
