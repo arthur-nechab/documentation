@@ -1,5 +1,3 @@
-https://adrisio.files.wordpress.com/2018/06/glpi.pdf
-
 ## I/ Présentation
 
 #### GLPI (Gestion libre de parc informatique) est un logiciel libre de gestion des services informatiques (gestion de parc, inventaire, budget…) et de gestion des services d’assistance (déclaration d’incident, tickets, statistiques).
@@ -86,3 +84,5 @@ sudo chown -R www-data:www-data /var/www/html/
 ## IV/ Mode Opératoire
 
 Une fois connecté sur l’interface web, nous pouvons facilement accéder aux services proposés par GLPI (tickets, planning, notes, contrats, etc…).
+
+https://adrisio.files.wordpress.com/2018/06/glpi.pdf
