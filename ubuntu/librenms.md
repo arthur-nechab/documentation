@@ -121,7 +121,7 @@ icon;
  location ~ \.php {
   include fastcgi.conf;
   fastcgi_split_path_info ^(.+\.php)(/.+)$;
-  fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+  fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
  }
  location ~ /\.ht {
   deny all;
