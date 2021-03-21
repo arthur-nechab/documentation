@@ -15,7 +15,7 @@ sudo apt install software-properties-common
 sudo add-apt-repository universe
 sudo apt update
 sudo apt upgrade
-sudo apt install curl composer fping git graphviz imagemagick mariadb-client mariadb-server mtr-tiny nginx-full nmap php7.3-cli php7.3-curl php7.3-fpm php7.3-gd php7.3-json php7.3-mbstring php7.3-mysql php7.3-snmp php7.3-xml php7.3-zip python-memcache python-mysqldb rrdtool snmp snmpd whois unzip
+sudo apt install curl composer fping git graphviz imagemagick mariadb-client mariadb-server mtr-tiny nginx-full nmap php7.3-cli php7.3-curl php7.3-fpm php7.3-gd php7.3-json php7.3-mbstring php7.3-mysql php7.3-snmp php7.3-xml php7.3-zip python-memcache python-mysqldb rrdtool snmp snmpd whois unzip python3-pip
 ```
 
 2. Ajout d’un utilisateur librenms
@@ -45,20 +45,25 @@ sudo setfacl -R -m g::rwx /opt/librenms/rrd /opt/librenms/logs /opt/librenms/boo
 
 ```
 su - librenms
+cd /opt/librenms
 ./scripts/composer_wrapper.php install --no-dev
 exit
 ```
 
 6. Configuration de MySQL
 
-```sql
+```
 sudo systemctl restart mysql
 sudo mysql -u root -p
+```
+
+```sql
 CREATE DATABASE librenms CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 USE librenms;
 CREATE USER 'librenms'@'localhost' IDENTIFIED BY ‘0000’;
 GRANT ALL PRIVILEGES ON librenms.* TO 'librenms'@'localhost';
 FLUSH PRIVILEGES;
+exit
 ```
 
 ```
@@ -94,7 +99,6 @@ date.timezone = Europe/Paris
 ```
 sudo systemctl restart php7.3-fpm
 sudo service php7.3-fpm start
-sudo ln -s /var/run/php/php7.3-fpm.sock /var/run/php/php7.0-fpm.sock
 sudo nano /etc/nginx/conf.d/librenms.conf
 ```
 
