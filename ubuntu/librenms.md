@@ -60,7 +60,7 @@ sudo mysql -u root -p
 ```sql
 CREATE DATABASE librenms CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 USE librenms;
-CREATE USER 'librenms'@'localhost' IDENTIFIED BY ‘0000’;
+CREATE USER 'librenms'@'localhost' IDENTIFIED BY '0000';
 GRANT ALL PRIVILEGES ON librenms.* TO 'librenms'@'localhost';
 FLUSH PRIVILEGES;
 exit
