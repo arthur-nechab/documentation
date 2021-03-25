@@ -44,8 +44,8 @@ sudo setfacl -R -m g::rwx /opt/librenms/rrd /opt/librenms/logs /opt/librenms/boo
 5. Installation des dépendances de PHP
 
 ```
-su - librenms
 cd /opt/librenms
+sudo su - librenms
 ./scripts/composer_wrapper.php install --no-dev
 exit
 ```
