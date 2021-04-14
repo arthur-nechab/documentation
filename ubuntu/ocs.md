@@ -113,7 +113,7 @@ exit;
 7. Installation d’OCS
 
 ```
-sudo wget https://github.com/OCSInventory-NG/OCSInventory-ocsreports/releases/download/2.8/OCSNG_UNIX_SERVER_2.8.tar.gz
+sudo wget https://github.com/OCSInventory-NG/OCSInventory-ocsreports/releases/download/2.8.1/OCSNG_UNIX_SERVER_2.8.1.tar.gz
 ```
 
 8. Extraire le dossier puis on se délace dedans
