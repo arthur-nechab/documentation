@@ -119,8 +119,8 @@ sudo wget https://github.com/OCSInventory-NG/OCSInventory-ocsreports/releases/do
 8. Extraire le dossier puis on se délace dedans
 
 ```
-sudo tar xfvz OCSNG_UNIX_SERVER_2.8.tar.gz
-cd ../../opt/OCSNG_UNIX_SERVER_2.8
+sudo tar xfvz OCSNG_UNIX_SERVER_2.8.1.tar.gz
+cd ../../opt/OCSNG_UNIX_SERVER_2.8.1
 sudo sh setup.sh
 ```
 
