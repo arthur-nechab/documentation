@@ -145,7 +145,7 @@ sudo systemctl reload apache2
 sudo service apache2 restart
 ```
 
-12. Ne pas oublier de supprimer le fichier `install.php` dans ../ocsreports/
+12. Ne pas oublier de supprimer le fichier `install.php` dans `usr/share/ocsinventory-reports/ocsreports/`
 
 13. Enfin dans `etc/php/7.2/apache2/php.ini`
 
