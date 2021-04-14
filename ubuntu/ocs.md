@@ -147,7 +147,7 @@ sudo service apache2 restart
 
 12. Ne pas oublier de supprimer le fichier `install.php` dans ../ocsreports/
 
-13. Enfin dans `php/7.2/apaché/php.ini`
+13. Enfin dans `php/7.2/apache/php.ini`
 
 ```
 max_execution_time = 180
