@@ -49,13 +49,13 @@ exit;
 sudo apt-get install apache2 php libapache2-mod-php php-json php-mysqli php-curl php-mbstring php-gd php-xml php-fileinfo php-zlib php-simplexml php-xml php-intl php-ldap
 ```
 
-3. Dans `php/7.2/apaché/php.ini` décommenter les extensions
+3. Dans `php/7.2/apache2/php.ini` décommenter les extensions
 
 4. Installer GLPI
 
 ```
-wget https://github.com/glpi-project/glpi/releases/download/9.5.2/glpi-9.5.2.tgz
-tar xvf glpi-9.5.2.tgz
+wget https://github.com/glpi-project/glpi/releases/download/9.5.2/glpi-9.5.5.tgz
+tar xvf glpi-9.5.5.tgz
 ```
 
 5. On bouge le dossier extrait dans le dossier du serveur apache
