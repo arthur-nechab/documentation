@@ -1,6 +1,6 @@
 ## Présentation
 
-##### Texte
+Texte
 
 ## Pré-requis
 
