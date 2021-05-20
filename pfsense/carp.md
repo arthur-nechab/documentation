@@ -1,11 +1,11 @@
-## 1) Présentation
+## Présentation
 
 ##### Texte
 
-## 2) Pré-requis
+## Pré-requis
 
 
-## 3) Installation
+## Installation
 
 
-## 4) Mode Opératoire
+## Mode Opératoire
