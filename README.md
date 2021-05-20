@@ -1,6 +1,6 @@
 ## Situations pour E4
 
-**Pour plus d'informations, https://bts.arthur-nechab.fr/e4/**
+**Plus d'informations sur https://bts.arthur-nechab.fr/e4/**
 
 * [PPE1 - Librenms](ubuntu/librenms.md)
 * [PPE2 - Redondance et haute disponibilité (pfSense)](pfsense/carp.md)
