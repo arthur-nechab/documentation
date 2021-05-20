@@ -1,11 +1,19 @@
-## pfSense
+## Situations pour E4
 
+**Pour plus d'informations, https://bts.arthur-nechab.fr/e4/**
+
+* [PPE1 - Librenms](ubuntu/librenms.md)
+* [PPE2 - Redondance et haute disponibilité (pfSense)](pfsense/carp.md)
+
+<!---
+## pfSense
 * [Configuration](pfsense/configuration.md)
 * [DHCP](pfsense/dhcp.md)
 * [DMZ](pfsense/dmz.md)
 * [IPsec](pfsense/ipsec.md)
 * [Nat](pfsense/nat.md)
 * [Roadwarrior](pfsense/roadwarrior.md)
+-->
 
 ## Ubuntu Server
 
@@ -14,7 +22,6 @@
 * [GLPI](ubuntu/glpi.md)
 * [Graylog](ubuntu/graylog.md)
 * [LDAP](ubuntu/ldap.md)
-* [Librenms](ubuntu/librenms.md)
 * [OCS](ubuntu/ocs.md)
 * [Serveur Web](ubuntu/web.md)
 * [Zimbra](ubuntu/zimbra.md)
