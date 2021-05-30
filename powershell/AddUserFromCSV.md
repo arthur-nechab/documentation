@@ -1,3 +1,4 @@
+```powershell
 #Importation du module Active Directory 
 Import-Module ActiveDirectory
  
@@ -42,3 +43,4 @@ ForEach ($user in $CSV)
     Write-Host "..."
     }
 }
+```
