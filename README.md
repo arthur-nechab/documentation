@@ -39,6 +39,6 @@
 
 ## Powershell
 
-* [AddUserFromCSV](windows/powershell/AddUserFromCSV.md)
-* [enableWinRM](windows/powershell/enableWinRM.md)
-* [getSerial](windows/powershell/getSerial.md)
+* [AddUserFromCSV](powershell/AddUserFromCSV.md)
+* [enableWinRM](powershell/enableWinRM.md)
+* [getSerial](powershell/getSerial.md)
