@@ -35,6 +35,10 @@
 
 ## Cisco
 
+* [Liste des TP](https://drive.google.com/drive/folders/1Y7V_2L8eUmU-pqxRRKOISrLQv8-3xCnz?usp=sharing)
+
 ## Powershell
 
-* [AddUserFromCSV](windows/powershell/AddUserFromCSV.ps1)
+* [AddUserFromCSV](windows/powershell/AddUserFromCSV.md)
+* [enableWinRM](windows/powershell/enableWinRM.md)
+* [getSerial](windows/powershell/getSerial.md)
