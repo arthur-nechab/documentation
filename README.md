@@ -37,4 +37,4 @@
 
 ## Powershell
 
-* [AddUserFromCSV](windows/powershell/script1.ps1)
+* [AddUserFromCSV](windows/powershell/AddUserFromCSV.ps1)
