@@ -40,5 +40,10 @@
 ## Powershell
 
 * [TP - AddUserFromCSV](powershell/AddUserFromCSV.md)
+
 * [Stage - enableWinRM](powershell/enableWinRM.md)
 * [Stage - getSerial](powershell/getSerial.md)
+
+## VBA
+
+* [Stage - ifExist](ifExist.md)
