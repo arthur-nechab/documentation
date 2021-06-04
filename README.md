@@ -5,8 +5,8 @@
 
 **Plus d'informations [ici](https://bts.arthur-nechab.fr/e4/)**
 
-* [PPE1 - Librenms](ubuntu/librenms.md)
-* [PPE2 - Redondance et haute disponibilité (pfSense)](pfsense/carp.md)
+* [Situation 1 - Librenms](ubuntu/librenms.md)
+* [Situation 2 - Redondance et haute disponibilité (pfSense)](pfsense/carp.md)
 
 <!---
 ## pfSense
