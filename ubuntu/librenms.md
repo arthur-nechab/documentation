@@ -174,3 +174,30 @@ Sur la machine Windows (ne pas oublier d’enlever le pare-feu windows), entrer 
 -	Entrer le mot de passe de la db et faire « Suivant ».
 -	Entrer ensuite les identifiants admin pour la connection.
 Une fois l’installation terminée, il ne vous reste plus qu’à vous connecter !
+
+## 3) Installation
+
+1. Ajout du localhost
+
+Nous pouvons maintenant ajouter des nouveaux éléments à monitorer. Aller dans « Device » puis « Add Device ». 
+Commençons par ajouter le serveur ubuntu où librenms est installé.
+
+![localhost](https://i.imgur.com/ezr55ZS.png)
+
+2. Ajout de l'Active Directory
+
+Ajoutons maintenant le Windows Serveur 2016. Pour cela il faut activer le protocole SNMP et le configurer.
+Dans le gestionnaire de serveur, aller dans « Gérer » puis « Ajouter des rôles et fonctionnalités »
+Faire suivant jusqu’au menu des « Fonctionnalités »
+Cocher et installer « Outils SNMP » 
+Dans « Services » et les propriétés de « Service SNMP », aller dans « Sécurité ». Ajouter le nom de la communauté et l’ip du serveur où librenms est installé.
+
+![ad1](https://i.imgur.com/RsWkJZd.png)
+
+Le serveur peut maintenant être ajouté. 
+
+![ad2](https://i.imgur.com/bKdQZOR.png)
+
+Voilà le résultat final :
+
+![résultat](https://i.imgur.com/Xa8LAP1.png)
