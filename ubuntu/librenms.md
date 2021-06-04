@@ -107,7 +107,7 @@ Coller ce texte dans le fichier .conf :
 ```
 server {
  listen      80;
- server_name librenms.example.com;
+ server_name s4-monitor.m2l.fr;
  root        /opt/librenms/html;
  index       index.php;
 
