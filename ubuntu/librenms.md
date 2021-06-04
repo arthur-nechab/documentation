@@ -3,8 +3,8 @@
 #### LibreNMS est un outil communautaire qui permet de faire de la surveillance informatique sur un large éventail de systèmes. Il permet de réaliser la métrologie d’infrastructures informatiques en tous genres. Il permet de remonter des métriques de presque toutes les sources SNMP. LibreNMS possède un dashboard entièrement personnalisable permettant de mettre en avant les graphiques les plus intéressants, et possède aussi un puissant moteur d’alerting.
 
 ## 2) Pré-requis
-##### -?
-##### -?
+##### -2GB de mémoire vive
+##### -30GB d'espace disque
 
 ## 3) Installation
 
