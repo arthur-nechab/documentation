@@ -1,7 +1,7 @@
 ## Présentation
 
-Le protocole CARP, pour *Common Address Redundancy Protocol*, permet à plusieurs hôtes d’utiliser une même IP pour effectuer de la redondance. Avec ce protocole, nous utiliserons aussi les protocoles pfSync et XML-RPC, qui permettent respectivement de synchroniser l’état des connexions en cours entre deux hôtes pfSense et pour le second de répliquer la configuration.
-Cela va nous permettre de mettre en place un Failover, afin d'assurer un service en haute-disponibilité.
+#### Le protocole CARP, pour *Common Address Redundancy Protocol*, permet à plusieurs hôtes d’utiliser une même IP pour effectuer de la redondance. Avec ce protocole, nous utiliserons aussi les protocoles pfSync et XML-RPC, qui permettent respectivement de synchroniser l’état des connexions en cours entre deux hôtes pfSense et pour le second de répliquer la configuration.
+#### Cela va nous permettre de mettre en place un Failover, afin d'assurer un service en haute-disponibilité.
 
 ## Pré-requis
 ##### -2 pfSense sur le même réseau LAN
