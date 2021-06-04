@@ -140,7 +140,9 @@ sudo cp /opt/librenms/snmpd.conf.example /etc/snmp/snmpd.conf
 sudo nano /etc/snmp/snmpd.conf
 ```
 
-Remplacer RANDOMSTRINGGOESHERE par autre chose (ici « public »).
+Remplacer RANDOMSTRINGGOESHERE par autre chose (ici « m2l »).
+
+![m2l](https://i.imgur.com/iv7l8VZ.png)
 
 9. Configuration de SNMP
 
